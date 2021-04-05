@@ -1495,6 +1495,8 @@ searchSites = {
     1327: ('Lauren Phillips', 'https://laurenphillips.com', '/search.php?query='),
     1328: ('Milfed', 'https://milfed.com', 'https://site-api.project1service.com'),
     1329: ('PervNana', 'https://www.pervnana.com', '/movies/'),
+    1330: ('SpankMonster', 'https://www.spankmonster.com', '/sapi/'),
+    1331: ('40somethingmag', 'https://www.40somethingmag.com', '/xxx-mature-videos/'),
 }
 
 abbreviations = (
@@ -2578,7 +2580,7 @@ def getProviderFromSiteNum(siteNum):
             provider = siteWoodmanCastingX
 
         # ScoreGroup
-        elif (1012 <= siteNum <= 1021):
+        elif (1012 <= siteNum <= 1021) or (siteNum == 1331):
             provider = networkScoreGroup
 
         # TwoTGirls
@@ -2590,7 +2592,7 @@ def getProviderFromSiteNum(siteNum):
             provider = siteSicflics
 
         # ModelCentro network
-        elif (1024 <= siteNum <= 1039) or siteNum == 1051 or siteNum == 1058 or siteNum == 1075 or siteNum == 1191 or siteNum == 1245:
+        elif (1024 <= siteNum <= 1039) or siteNum == 1051 or siteNum == 1058 or siteNum == 1075 or siteNum == 1191 or siteNum == 1245 or siteNum == 1330:
             provider = networkModelCentro
 
         # Culioneros
